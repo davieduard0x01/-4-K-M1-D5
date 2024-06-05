@@ -1,0 +1,153 @@
+/* Adicione essas regras CSS ao seu arquivo style.css */
+
+@font-face {
+    src: url("assets/fonts/vt323.ttf");
+    font-family: "VT323";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 24px;
+    font-family: "VT323";
+    color: white;
+    background-color: black;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.navbar-content {
+    width: 85%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 52px;
+    width: 52px;
+}
+
+.logo-text {
+    margin-left: 1rem;
+}
+
+.button {
+    width: 160px;
+    justify-content: center;
+    height: 42px;
+    gap: 0.5rem;
+    font-size: 24px;
+    font-family: "VT323";
+    display: flex;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffd900b0;
+    align-items: center;
+    text-decoration: none;
+}
+
+.discord-blogo {
+    width: 24px;
+    height: 24px;
+}
+
+.content-container {
+    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 2rem 0;
+    position: relative;
+    align-items: center;
+    margin-top: 60px; 
+}
+
+.content {
+    width: 80%;
+    text-align: center;
+}
+
+.question-group {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.socials {
+    list-style-type: none;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-link {
+    margin-left: 0.5rem;
+}
+
+.link {
+    text-decoration: underline;
+    color: white;
+}
